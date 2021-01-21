@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/nightsky"
+    tools:context=".QuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="Congratulation!"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:layout_marginBottom="10dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1A1A62"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="Steve," />
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#D62012"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="you got 10" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="out of 12!" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/btn_main"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="go to main"
+            android:textSize="25sp"
+            android:backgroundTint="#1A1A62"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="200dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
